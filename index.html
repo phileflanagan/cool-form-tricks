@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Cool Form Tricks by Phil Flanagan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="container">
+
+<div class="signup-wrapper xycenter">
+	<header>
+		<div class="xycenter">
+  		<span class="dot active"></span>
+  		<span class="dot"></span>
+  		<span class="dot"></span>
+		</div>
+	</header>
+
+	<h2>You're Almost There</h2>
+	<p>First, you need to create an account</p>
+
+	<form class="cool-form">
+		<div>
+			<input type="text" name="firstname" id="firstname" placeholder=" " required />
+			<label for="firstname">First Name</label>
+		</div>
+
+		<div>
+			<input type="text" name="lastname" id="lastname" placeholder=" " required />
+			<label for="lastname">Last Name</label>
+		</div>
+
+		<div>
+			<input type="email" name="email" id="email" placeholder=" " required />
+			<label for="email">Email</label>
+			<div class="requirements">
+				Must be a valid email address.
+			</div>
+		</div>
+
+		<div>
+			<input type="password" name="password" id="password" placeholder=" " pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required />
+			<label for="password">Password</label>
+			<div class="requirements">
+				Minimum 8 characters at least 1 letter and 1 number.
+			</div>
+		</div>
+
+		<input type="submit" id="submit" value="Let's Go"/>
+	</form>
+
+</div>
+
+</div>
+</body>
+</html>

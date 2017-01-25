@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	background: #d6c6b0;
+	height: 100vh;
+}
+
+* { box-sizing: border-box; }
+
+input:focus {
+	outline: none;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.xycenter {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.signup-wrapper {
+	width: 600px;
+	text-align: center;
+	background-color: white;
+	box-shadow: 10px 10px 0px rgba(0,0,0,0.15);
+	color: #666;
+}
+
+.signup-wrapper header {
+	background-color: skyblue;
+	height: 40px;
+	text-align: center;
+	position: relative;
+}
+
+span.dot {
+	display: inline-block;
+	border-radius: 50%;
+	width: 12px;
+	height: 12px;
+	margin: 0 4px;
+	background-color: #eaeaea;
+}
+
+span.dot.active {
+	background-color: white;
+}
+
+.signup-wrapper h2 {
+	margin-bottom: 0;
+}
+
+.signup-wrapper p {
+	margin: 5px;
+}
+
+.cool-form {
+	max-width: 400px;
+	margin: 0 auto;
+	color: #aaa;
+}
+
+.cool-form > div {
+	position: relative;
+	margin-top: 20px;
+}
+
+
+.cool-form > div > label {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	transition: all 0.3s;
+}
+
+.cool-form > div > .requirements {
+	display: none;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.cool-form > div > input {
+	width: 100%;
+	padding: 10px;
+	color: #888;
+	border: none;
+	border-bottom: 2px solid #aaa;
+	transition: all 0.3s;
+}
+
+.cool-form > div > input:focus {
+	border-bottom-color: skyblue;
+}
+.cool-form > div > input:focus + label {
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: 700;
+	top: -10px;
+	left: 0;
+	color: skyblue;
+}
+
+/* Input is valid, not empty */
+.cool-form > div > input:valid:not(:placeholder-shown) {
+	border-bottom-color: #c2df75;
+}
+
+.cool-form > div > input:valid:not(:placeholder-shown) + label {
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: 700;
+	top: -10px;
+	left: 0;
+	color: #c2df75;	
+}
+
+/* Input is not vald, not in focus, not empty */
+.cool-form > div > input:invalid:not(:focus):not(:placeholder-shown) {
+	border-bottom-color: #df7c7c;
+}
+.cool-form > div > input:invalid:not(:focus):not(:placeholder-shown) + label {
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: 700;
+	top: -10px;
+	left: 0;
+	color: #df7c7c;
+}
+
+/* Show Requirements on invalid non-empty forms */
+.cool-form > div > input:invalid:not(:placeholder-shown) ~ .requirements {
+	display: block;
+	color: #df7c7c;
+} 
+
+/* Input is not valid, is in focus, not empty */
+.cool-form > div > input:invalid:focus:not(:placeholder-shown) {
+	border-bottom-color: #df7c7c;
+}
+.cool-form > div > input:invalid:focus:not(:placeholder-shown) + label{
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: 700;
+	top: -10	px;
+	left: 0;
+	color: #df7c7c;
+}
+
+.cool-form input[type=submit] {
+	border: none;
+	color: white;
+	background-color: #c2df75;
+	padding: 15px 30px;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin: 20px;
+}
+.cool-form input[type=submit]:hover {
+	background-color: #b4d168;	
+}
