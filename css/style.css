@@ -29,11 +29,13 @@ input:focus {
 }
 
 .signup-wrapper {
-	width: 600px;
+	max-width: 600px;
+	width: 100%;
 	text-align: center;
 	background-color: white;
 	box-shadow: 10px 10px 0px rgba(0,0,0,0.15);
 	color: #666;
+	margin: 1rem;
 }
 
 .signup-wrapper header {
@@ -65,8 +67,10 @@ span.dot.active {
 }
 
 .cool-form {
-	max-width: 400px;
+	max-width: 600px;
+	width: 100%;
 	margin: 0 auto;
+	padding: 0 10%;
 	color: #aaa;
 }
 
@@ -121,7 +125,7 @@ span.dot.active {
 	font-weight: 700;
 	top: -10px;
 	left: 0;
-	color: #c2df75;	
+	color: #c2df75;
 }
 
 /* Input is not vald, not in focus, not empty */
@@ -141,7 +145,7 @@ span.dot.active {
 .cool-form > div > input:invalid:not(:placeholder-shown) ~ .requirements {
 	display: block;
 	color: #df7c7c;
-} 
+}
 
 /* Input is not valid, is in focus, not empty */
 .cool-form > div > input:invalid:focus:not(:placeholder-shown) {
@@ -166,5 +170,5 @@ span.dot.active {
 	margin: 20px;
 }
 .cool-form input[type=submit]:hover {
-	background-color: #b4d168;	
+	background-color: #b4d168;
 }
